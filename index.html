@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
     <div class="responsive" onclick="startBattle('mario', '200')">
         <div class="gallery">
             <img src="mario.png" alt="mario">
@@ -69,17 +69,24 @@
         </div>
       </div>
     
+      <audio id="backgroundMusic" autoplay loop>
+        <source src="/marioSong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="toggleButton">Toggle Music</button>
+
 
       <div class="battle-wrapper">
         <div id="battle">
-            <h2>Kampresultat:</h2>
+            <h2>Kampresultat: <h2 id="result"></h2></h2>
             <div class="fight">
             <img id="selectedCharacter" src="" alt="Valgt karakter">
             <img src="bowser.png" alt="Bowser">
-            <p id="result"></p>
+            <h2 id="result"></h2>
         </div>
         </div>
         </div>
+
 
     <script src="app.js"></script>
 

@@ -26,3 +26,21 @@ function battle(characterHP, bowserHP) {
         return 'win';
     }
 }
+
+let isMusicPlaying = false;
+
+toggleButton.addEventListener('click', () => {
+    console.log('Toggle button clicked'); // Feilsøking: Sjekk om knappen klikkes
+
+    if (isMusicPlaying) {
+        backgroundMusic.pause();
+        isMusicPlaying = false;
+        toggleButton.textContent = 'Play Music';
+        console.log('Music paused'); // Feilsøking: Sjekk om musikken settes på pause
+    } else {
+        backgroundMusic.play();
+        isMusicPlaying = true;
+        toggleButton.textContent = 'Pause Music';
+        console.log('Music played'); // Feilsøking: Sjekk om musikken spilles av
+    }
+});
