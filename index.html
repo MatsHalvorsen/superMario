@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="responsive" onclick="startBattle('mario', '200')">
+        <div class="gallery">
+            <img src="mario.png" alt="mario">
+            <div class="desc">
+                <ul>
+                <li>Mario</li>
+                <li>HP: 200</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      
+      
+      <div class="responsive" onclick="startBattle('luigi', '140')">
+        <div class="gallery">
+            <img src="luigi.png" alt="loigi">
+            <div class="desc">
+                <ul>
+                <li>Luigi</li>
+                <li>HP: 140</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      
+      <div class="responsive" onclick="startBattle('peach', '100')">
+        <div class="gallery">
+            <img src="peach.png" alt="peachs>
+            <div class="desc">
+                <ul>
+                <li>Peach</li>
+                <li>HP: 100</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="responsive" onclick="startBattle('yoshi', '80')">
+        <div class="gallery">
+            <img src="yoshi.png" alt="yoshi>
+            <div class="desc">
+                <ul>
+                <li>Yoshi</li>
+                <li>HP: 80</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      
+      <div class="responsive" onclick="startBattle('bowser', '300')">
+        <div class="gallery">
+            <img src="bowser.png" alt="bowser">
+          <div class="desc">
+            <ul>
+            <li>Bowser</li>
+            <li>HP: 300</li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
+      <div class="battle-wrapper">
+        <div id="battle">
+            <h2>Kampresultat:</h2>
+            <div class="gallery">
+            <img id="selectedCharacter" src="" alt="Valgt karakter">
+            <img src="bowser.png" alt="Bowser">
+            <p id="result"></p>
+        </div>
+        </div>
+        </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
